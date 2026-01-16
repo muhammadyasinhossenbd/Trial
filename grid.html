@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <Style>
+        .container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px) 50px 50px;
+        }
+
+        .box {
+            background-color: cadetblue;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #sidebar {
+            grid-row: span 5;
+        }
+
+        .red {
+            background-color: rgb(222, 103, 103);
+
+        }
+
+        .footer {
+            grid-column: span 3;
+        }
+
+        h1 {
+            font-size: 5em;
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                display: grid;
+                grid-template-rows: 1 fr;
+            }
+
+            #sidebar {
+                grid-row: span 1;
+                grid-column: span 4;
+                position: sticky;
+                top: 0;
+                border: 10px solid rgb(72, 52, 206);
+                border-radius: 10px;
+
+            }
+
+            .box {
+                background-color: cadetblue;
+                padding: 5px;
+                grid-column: span 4;
+            }
+
+            .red {
+                background-color: rgba(241, 88, 177, 0.449);
+
+            }
+
+            .footer {
+                grid-column: span 4;
+            }
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="sidebar" class="box">
+            <h1>Kire Halar Po</h1>
+        </div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box red">6</div>
+        <div class="box red">7</div>
+        <div class="box">8</div>
+        <div class="box red">9</div>
+        <div class="box red">10</div>
+        <div class="box footer">11</div>
+        <div class="box footer">12</div>
+    </div>
+</body>
+
+</html>
