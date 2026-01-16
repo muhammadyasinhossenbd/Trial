@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 500px);
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: yellowgreen;
+    padding: 15px;
+    border-radius: 10px;
+    color: aquamarine;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    body {
+        background-color: blue;
+    }
+
+
+}
