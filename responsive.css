@@ -12,12 +12,40 @@
     color: aquamarine;
 }
 
+.items {
+    color: burlywood;
+    background-color: brown;
+    width: 100px;
+    text-align: center;
+}
 
-
+.box-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
 
 @media screen and (max-width: 576px) {
     body {
         background-color: blue;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        color: brown;
+        background-color: burlywood;
+    }
+
+    .items {
+        color: burlywood;
+        background-color: brown;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
     }
 
 
