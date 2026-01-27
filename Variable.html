@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --primary-color: rgb(235, 96, 156);
+            --secondary-color: blue;
+            --font-size: 15px;
+
+        }
+
+        h1 {
+            color: var(--primary-color);
+        }
+
+        h5 {
+            background-color: var(--primary-color);
+
+        }
+
+        .box {
+            border: 2px solid var(--primary-color);
+            width: calc(100% - 300px);
+        }
+
+        p {
+            color: var(--primary-color);
+            font-size: var(--font-size);
+
+        }
+
+        .sidebar {
+            background-color: lightgray;
+        }
+
+        .content {
+            background-color: lightskyblue;
+        }
+
+        .container {
+
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+            grid-template-rows: 500px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>My Custom Properties</h1>
+    <h5>Also Commonly know as CSS Variables</h5>
+    <div class="box">
+        <h3>I'm Doing Something</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, dignissimos harum earum et cupiditate,
+            distinctio nobis nihil explicabo natus consectetur quae corrupti, exercitationem numquam nisi culpa beatae
+            velit omnis ullam! In accusantium voluptates sint reprehenderit ab explicabo officiis nam omnis cupiditate
+            dolorem velit, tempora saepe nesciunt aliquid, maiores molestiae culpa? Ducimus, a? Quasi velit molestiae
+            inventore repellendus! Porro similique voluptatibus sed ut eius eaque qui velit placeat libero deserunt,
+            nulla aut sit architecto laborum aperiam incidunt. Numquam non minima dolore praesentium vero at delectus
+            tempora veritatis magnam, quasi ratione officia commodi nihil deserunt suscipit sit ea esse, labore totam
+            cumque doloremque! Dignissimos fugit totam facilis nesciunt repellendus obcaecati magni libero sint dicta.
+            Deleniti at numquam eveniet doloremque molestias soluta molestiae alias beatae eos delectus veritatis,
+            maiores aspernatur quasi natus dolorem optio voluptatum exercitationem esse atque nobis sunt architecto vel
+            reiciendis. Obcaecati voluptatum voluptas dolorum laboriosam accusamus quidem repellat, sint nihil quaerat
+            velit est quis excepturi aliquam voluptatibus! Cupiditate illum nobis iste. Eum, ullam quis voluptas,
+            deleniti eligendi, ducimus maxime non animi dolorem modi cupiditate quisquam perspiciatis impedit. Porro
+            sunt hic fugiat at dolor corrupti voluptas dolorum, dolorem unde delectus commodi ut architecto quasi facere
+            quod sapiente voluptate, nam consectetur neque.</p>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Main Content</div>
+    </div>
+</body>
+
+</html>
