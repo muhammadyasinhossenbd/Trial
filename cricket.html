@@ -7,14 +7,14 @@
     <title>Cricket Field</title>
     <style>
         .field {
-            height: 500px;
-            width: 500px;
+            height: 600px;
+            width: 6000px;
             border: 1px solid red;
         }
 
         img {
-            width: 70%;
-            height: 50%;
+            width: 400px;
+            height: 400px;
         }
 
         .field:hover .bat {
@@ -22,19 +22,27 @@
             transform-origin: top right;
         }
 
+        .field:hover .ball {
+            transform: translate(1000px, -500px);
+
+        }
+
+
         .ball {
             height: 50px;
             width: 50px;
-            border: 2px solid red;
             background-color: red;
-            border-radius: 55%;
+            border-radius: 100%;
+            position: relative;
+            left: 495px;
+            transition: transform 1s ease-out 0.2s;
         }
     </style>
 </head>
 
 <body>
     <div class="field">
-        <img src="./images/F.jpg" alt="" class="bat">
+        <img src="./images/bat.png" class="bat">
         <div class="ball"></div>
     </div>
 </body>
