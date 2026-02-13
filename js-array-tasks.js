@@ -22,8 +22,30 @@
 
 
 //Task 03
-const books = ['Math', 'English', 'Bangla', 'Science', 'ICT', 'IE']
-console.log(books)
-console.log(books.includes('Math'))
-books.push('Biology')
-console.log(books)
+// const books = ['Math', 'English', 'Bangla', 'Science', 'ICT', 'IE']
+// console.log(books)
+// console.log(books.includes('Math'))
+// books.push('Biology')
+// console.log(books)
+
+
+// Task 04
+
+//Array.isArray(var)
+
+// const books = ['Math', 'English', 'Bangla', 'Science', 'ICT', 'IE'];
+// const foods = 'a t h ';
+// const looks = ['IE'];
+
+// console.log(Array.isArray(books))
+// console.log(Array.isArray(foods))
+// console.log(Array.isArray(looks))
+
+
+// Task 05
+// Use Concat 
+const fruits = ['apple', 'orange', 'Grape', 'Banana', 'Watermelon' ] 
+const books = ['Math', 'English', 'Bangla', 'Science', 'ICT', 'IE'];
+// const bookf = [fruits + " _ " + books]
+const bookf = fruits.concat(" || " + books)
+console.log(bookf)
